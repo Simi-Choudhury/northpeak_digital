@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NorthPeak Digital — Stopping digital threats before they start</title>
+<meta name="description" content="NorthPeak Digital is an elite cybersecurity agency delivering 24/7 threat monitoring, penetration testing, incident response and cloud security for high-stakes businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2L21 6V12C21 17 17.5 20.5 12 22C6.5 20.5 3 17 3 12V6L12 2Z" stroke="#2DE1FC" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M8 12L11 15L16 9" stroke="#2DE1FC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      NorthPeak Digital
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn-cta" href="#contact">Get Free Audit</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M3 5H17M3 10H17M3 15H17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn-cta" href="#contact">Get Free Audit</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="wrap">
+      <span class="status-badge"><span class="pulse"></span>Live: all systems monitored, 0 active incidents</span>
+      <h1 id="hero-heading">Stopping digital threats <span class="accent">before they start.</span></h1>
+      <p class="lead">NorthPeak Digital is an elite cybersecurity agency. Our analysts monitor, hunt and respond around the clock so a breach never becomes your headline.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#contact">Get Free Audit</a>
+        <a class="btn-secondary" href="#services">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="intel">
+    <div class="intel-grid wrap" style="padding-left:0; padding-right:0;">
+      <div class="intel-cell flag">
+        <p class="label">Threats blocked today</p>
+        <p class="value" id="stat-blocked">0</p>
+      </div>
+      <div class="intel-cell">
+        <p class="label">Endpoints monitored</p>
+        <p class="value" id="stat-endpoints">0</p>
+      </div>
+      <div class="intel-cell">
+        <p class="label">Avg. response time</p>
+        <p class="value" id="stat-response">0<span class="unit">min</span></p>
+      </div>
+      <div class="intel-cell">
+        <p class="label">Uptime, trailing 12mo</p>
+        <p class="value" id="stat-uptime">0<span class="unit">%</span></p>
+      </div>
+    </div>
+  </div>
+
+  <section id="services" aria-labelledby="services-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Core services</p>
+        <h2 id="services-heading">Coverage built for real attackers</h2>
+        <p>Four disciplines, one coordinated team. Each service plugs directly into the same monitoring and response pipeline.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L21 6V12C21 17 17.5 20.5 12 22C6.5 20.5 3 17 3 12V6L12 2Z" stroke="#2DE1FC" stroke-width="1.6"/><path d="M12 8V13M12 16H12.01" stroke="#2DE1FC" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Vulnerability Assessment</h3>
+          <p>Continuous scanning and manual review to surface exposures before an attacker finds them first.</p>
+          <div class="tag-list"><span>CVE mapping</span><span>Risk scoring</span></div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="#2DE1FC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Incident Response</h3>
+          <p>A retained team on call to contain, investigate and recover, with a tested playbook for the worst day.</p>
+          <div class="tag-list"><span>Containment</span><span>Forensics</span></div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M7 17H16A4 4 0 0 0 16 9A5 5 0 0 0 6.5 8A3.5 3.5 0 0 0 7 17Z" stroke="#2DE1FC" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Cloud Security</h3>
+          <p>Identity hardening, misconfiguration review and posture monitoring across AWS, Azure and GCP.</p>
+          <div class="tag-list"><span>IAM audit</span><span>CSPM</span></div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3L4 7V12C4 16.5 7.5 20 12 21C16.5 20 20 16.5 20 12V7L12 3Z" stroke="#2DE1FC" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="#2DE1FC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Penetration Testing</h3>
+          <p>Manual, adversary-style testing of your apps and network — not just an automated scan with a logo on it.</p>
+          <div class="tag-list"><span>Web &amp; API</span><span>Network</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-us" aria-labelledby="why-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Why choose us</p>
+        <h2 id="why-heading">Built by people who've done this under pressure</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L21 6V12C21 17 17.5 20.5 12 22C6.5 20.5 3 17 3 12V6L12 2Z" stroke="#2DE1FC" stroke-width="1.6"/></svg></div>
+          <div>
+            <h3>Certified experts</h3>
+            <p>OSCP, CISSP and GIAC-certified analysts leading every engagement, not outsourced to a call center.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#2DE1FC" stroke-width="1.6"/><path d="M12 7V12L15 14" stroke="#2DE1FC" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <div>
+            <h3>24/7 monitoring</h3>
+            <p>A live SOC that never sleeps, with real analysts triaging alerts before they ever reach your inbox.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14H12L11 22L20 10H12L13 2Z" stroke="#2DE1FC" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <div>
+            <h3>Fast, tested response</h3>
+            <p>Playbooks rehearsed in tabletop exercises, not written once and forgotten. Minutes matter, and we plan for them.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="#2DE1FC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="5" width="16" height="15" rx="2" stroke="#2DE1FC" stroke-width="1.6"/></svg></div>
+          <div>
+            <h3>Compliance built in</h3>
+            <p>We maintain the audit trail as we go, so SOC 2 and ISO 27001 reviews stop being a scramble.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Client trust</p>
+        <h2 id="testimonials-heading">What it's like on the other side of a breach — or none at all</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p class="stars">★★★★★</p>
+          <p class="quote">"NorthPeak caught a credential leak in our CI pipeline before it ever reached production."</p>
+          <p class="who">Tomas Reyes, CTO — Fenwick Analytics</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="stars">★★★★★</p>
+          <p class="quote">"Our SOC 2 audit went from an eight-week scramble to a two-week formality."</p>
+          <p class="who">Anaïs Girard, Head of Ops — Verdant Health</p>
+        </article>
+        <article class="testimonial-card">
+          <p class="stars">★★★★★</p>
+          <p class="quote">"Their response team had us contained in under ten minutes. That's the whole pitch, honestly."</p>
+          <p class="who">Owen Baptiste, IT Director — Marrow Freight</p>
+        </article>
+      </div>
+    </div>
+  </section>
+<section class="pricing" id="pricing">
+
+    <h2>Choose Your Security Plan</h2>
+
+    <p>
+        Flexible plans designed to protect businesses of all sizes.
+    </p>
+ <div class="pricing-container">
+     <div class="price-card">
+
+             <h3>Basic</h3>
+          <h1>£49<span>/month</span></h1>
+        <ul>
+        <li>✔ Firewall Protection</li>
+        <li>✔ Malware Scanning</li>
+        <li>✔ Email Security</li>
+        <li>✔ Monthly Reports</li>
+         </ul>
+
+            <a href="#contact" class="btn">
+              Get Started
+             </a>
+
+        </div>
+        <div class="price-card featured">
+
+    <h3>Professional</h3>
+
+    <h1>£99<span>/month</span></h1>
+
+    <ul>
+        <li>✔ Everything in Basic</li>
+        <li>✔ 24/7 Threat Monitoring</li>
+        <li>✔ Cloud Security</li>
+        <li>✔ Vulnerability Assessment</li>
+        <li>✔ Priority Support</li>
+    </ul>
+
+    <a href="#contact" class="btn">
+        Choose Plan
+    </a>
+
+</div>
+        <div class="price-card">
+
+    <h3>Enterprise</h3>
+
+    <h1>Custom</h1>
+
+    <ul>
+        <li>✔ Everything in Professional</li>
+        <li>✔ Dedicated Security Team</li>
+        <li>✔ Incident Response</li>
+        <li>✔ Security Compliance</li>
+        <li>✔ 24/7 Premium Support</li>
+    </ul>
+
+    <a href="#contact" class="btn">
+        Contact Us
+    </a>
+
+</div>
+    </div>
+</section>
+
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="wrap contact-layout">
+      <div class="contact-info">
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="contact-heading">Request your free security audit</h2>
+        <p>Tell us about your environment and we'll reply within one business day with findings and next steps.</p>
+        <dl>
+          <div><dt>Email</dt><dd>hello@northpeakdigital.co</dd></div>
+          <div><dt>Studio</dt><dd>Austin, Texas — working with clients everywhere</dd></div>
+          <div><dt>Response time</dt><dd>Within 1 business day</dd></div>
+        </dl>
+        <p class="secure-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#3DDC97" stroke-width="1.8"/><path d="M8 11V7A4 4 0 0 1 16 7V11" stroke="#3DDC97" stroke-width="1.8"/></svg>
+          This form is encrypted in transit
+        </p>
+      </div>
+
+      <form id="contact-form" novalidate>
+        <div class="row-2">
+          <div class="field" data-field="name">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required minlength="2" placeholder="Jordan Lee">
+            <p class="field-error">Enter your full name.</p>
+          </div>
+          <div class="field" data-field="email">
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="jordan@company.com">
+            <p class="field-error">Enter a valid email address.</p>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="field" data-field="company">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" autocomplete="organization" required minlength="2" placeholder="Company name">
+            <p class="field-error">Enter your company name.</p>
+          </div>
+          <div class="field" data-field="size">
+            <label for="size">Environment size</label>
+            <select id="size" name="size" required>
+              <option value="" selected disabled>Select a range</option>
+              <option value="under-50">Under 50 employees</option>
+              <option value="50-250">50 – 250 employees</option>
+              <option value="250-1000">250 – 1,000 employees</option>
+              <option value="1000-plus">1,000+ employees</option>
+            </select>
+            <p class="field-error">Select an environment size.</p>
+          </div>
+        </div>
+
+        <div class="field" data-field="message">
+          <label for="message">What are you looking to secure?</label>
+          <textarea id="message" name="message" required minlength="10" placeholder="Tell us about your systems, timeline, and any concerns..."></textarea>
+          <p class="field-error">Tell us at least a sentence or two about your environment.</p>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="btn-submit">Send request</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <a href="#top" class="footer-brand">NorthPeak Digital</a>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why-us">Why Us</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+</ul>
+      </nav>
+    </div>
+    <div class="social-links">
+
+    <a href="#" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="#" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="#" aria-label="X">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+
+</div>
+   <div class="footer-bottom">
+    <p>© 2026 NorthPeak Digital. All rights reserved.</p>
+
+    <p>Fictional cybersecurity company.</p>
+
+    <p>
+        Built for
+        <a href="https://digitalheroesco.com" target="_blank">
+            Digital Heroes Training Task
+        </a>
+    </p>
+</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
