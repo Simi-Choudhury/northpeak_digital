@@ -110,7 +110,7 @@
     url("images/hero.webp"); 
     background-size:cover;
     background-position:center;
-    background-attachment: no-repeat;
+    background-repeat: no-repeat;
 
   }
  .hero::before{
